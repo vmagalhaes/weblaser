@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eron Turismo - Orçamento</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section class="top">
+        <nav class="navbar">
+           <a href="index.html">INÍCIO</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a class="actived" href="orcamento.html">ORÇAMENTO</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+    </section>
+    <section class="banner"><img src="imgs/EronLogo.fw.png" width="300" height="150"></section>
+    <div class="content">
+    	<section class="over-content">
+        </section>
+        <section class="middle-content" style="max-width:41%;">
+            <form class="formEstimate" action="scripts/contact.php" method="POST">
+                <table style="width:300px;">
+                    <tr>
+                        <td>
+                            <label class="field" for="clientName">Nome:</label>
+                            <input type="text" name="clientName" placeholder="Digite seu nome aqui" required>
+                        </td>
+                        <td>
+                            <label class="field" for="clientEmail">e-Mail:</label>
+                            <input type="email" name="clientEmail" placeholder="Digite seu e-mail aqui" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="field" for="clientPhone1">Telefone (1):</label>
+                            <input type='tel' name="clientPhone1" placeholder="Celular" pattern='[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Número de telefone (Formato: (99)9999-9999)' required> 
+                        </td>
+                        <td>
+                            <label class="field" for="clientPhone2">Telefone (2):</label>
+                            <input type='tel' name="clientPhone2" placeholder="Celular" pattern='[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Número de telefone (Formato: (99)9999-9999)' required> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Dados de saída</th>
+                        <th>Dados de destino</th>
+                        <th>Dados de retorno</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="clientAddressOut" placeholder="Endereço" required>
+                            <input type="text" name="clientDistrictOut" placeholder="Bairro" required>
+                            <input type="text" name="clientCountyOut" placeholder="Município" required>
+                            <input type="text" name="clientUFOut" placeholder="UF" maxlength="2" required>
+                            <input type="date" name="clientDateOut" placeholder="Data" required>
+                            <input type="time" name="clientDateTimeOut" placeholder="Horário" required>
+                        </td>
+                        <td>
+                            <input type="text" name="clientAddressDestination" placeholder="Endereço" required>
+                            <input type="text" name="clientDistrictDestination" placeholder="Bairro" required>
+                            <input type="text" name="clientCountyDestination" placeholder="Município" required>
+                            <input type="text" name="clientUFDestination" placeholder="UF" maxlength="2" required>
+							<label class="field" for="clientService">Selecione um serviço:</label>
+							<select name="clientService" required>
+							  <option value="Transporte Universitário">Transporte Universitário</option>
+							  <option value="Transporte Empresarial">Transporte Empresarial</option>
+							  <option value="Passeios e Viagens">Passeios e Viagens</option>
+							</select>
+                        </td>
+                        <td>
+                            <input type="date" name="clientDateReturn" placeholder="Data" required>
+                            <input type="time" name="clientDateTimeReturn" placeholder="Horário" required>
+                        </td>
+                    </tr>
+                </table>
+                <textarea name="clientComment" form="formEstimate" maxlength="300" cols="50" rows="5" placeholder="Deixe um comentário aqui."></textarea><br>
+                <input class="btnSend" type="submit" value="Enviar"><!--<img src="imgs/enviar.fw.png"/></button>-->
+            </form>
+        </section>
+    </div>
+    <section class="footer">
+        <footer>
+			<p>Eron Tur © 2014. Todos os direitos reservados. <small>Desenvolvido por Web Laser</small><br>
+			FACEBOOK API.</p>
+		</footer>
+    </section>
+</body>
+</html>

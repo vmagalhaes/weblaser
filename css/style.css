@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:Cambria, Arial, sans-serif;
+	text-align:center;
+	background:url(imgs/Fundo.png) repeat-x;
+	font-size:18px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:"Century Gothic";
+	text-transform:uppercase;
+	background-image:url(imgs/WebLaser_Line_Orange.png);
+	border-radius:2px;
+	color: white;
+	font-weight:500;
+	margin:5px;
+}
+
+.corpo {
+	padding:10px;
+	max-width:1024px;
+	margin-left:auto;
+  	margin-right:auto;
+}
+
+.menu {
+	font-family:Century Gothic, Helvetica, Arial, sans-serif;
+	font-size:22px;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:-40px;
+	left:65px;
+}
+
+.menu > a {
+	text-decoration: none;
+	color:white;	
+	padding:12px;
+}
+
+.menu > a:hover {
+	background-color:rgba(30, 30, 30, 0.8);	
+	padding-bottom:12px;
+	margin:-1px;
+}
+
+
+footer {
+	font-family:Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-size:16px;
+	background-image:url(imgs/WebLaser_Line_Orange.png);
+	color:white;
+	margin: 10px 0px 0px 0px;	
+	border:1px #ff6e13 solid;
+	border-radius:2px;
+	clear:both;
+}
+
+.box {
+	max-width:475px;
+	margin:10px;
+	padding:5px;
+	border:solid 2px white;
+	border-radius:2px;
+	background:white;
+}
+
+.imgPequena {
+	max-width:100px;
+	max-height:100px;
+}

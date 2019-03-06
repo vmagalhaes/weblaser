@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:Arial, sans-serif;
+	text-align:center;
+	background:#eee;
+	font-size:18px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:Verdana, Helvetica Neue, Arial, sans-serif;
+	background-image:url(RedLaser_menu.png);
+	border:1px solid #850a0a;
+	border-radius:2px;
+	color:white;
+	font-style:italic;
+}
+
+.corpo {
+	padding:25px;
+	width:1024px;
+	margin-left:auto;
+  	margin-right:auto;
+}
+
+.conteudo {	
+	height:400px;
+}
+
+.menu {
+	font-family:Century Gothic, Helvetica, Arial, sans-serif;
+	font-size:22px;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:-40px;
+}
+
+.menu > a {
+	text-decoration: none;
+	color:white;	
+	padding:10px;
+}
+
+.menu > a:hover {
+	background-color:#1a1a1a;	
+	padding-bottom:12px;
+	margin:-1px;
+}
+
+
+.esquerda, .direita {
+	max-width:500px;
+	position:relative;
+}
+
+footer {
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	font-size:16px;
+	background-image:url(RedLaser_menu.png);
+	color:white;
+	margin: 10px 0px 0px 0px;	
+	border:1px #850a0a solid;
+	border-radius:2px;
+	clear:both;
+}
+
+.box {
+	padding:10px;
+}
+
+.imgPequena {
+	max-width:100px;
+	max-height:100px;
+}
